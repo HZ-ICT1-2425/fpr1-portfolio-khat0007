@@ -31,7 +31,7 @@
 
     <p>
         The increasing role of Technology in shaping the modren world has also played a significant role</p><br>
-    <p><a href="study.html">read more...</a></p>
+    <p>>read more...</p>
 
 <br>
     <h1>Personal SWOT</h1>
