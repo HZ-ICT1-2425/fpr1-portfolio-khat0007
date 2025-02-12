@@ -7,7 +7,7 @@
     <title>Blogs</title>
 
     {{-- Compiled assets --}}
-    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 
 
