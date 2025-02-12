@@ -10,7 +10,7 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js', 'resources/css/app.css'])
 </head>
 <body>
-<img src="{{ asset('images/HZ-logo-EN.jpg') }}" class="mylogo">
+<img src="{{ asset('images/HZ-logo-EN.jpg') }}" class="mylogo" alt="">
 
 <nav>
     <ul class="navlist">
@@ -36,15 +36,15 @@
 
 <section>
     <div class="container">
-        <img src="./resources/my_img.jpg" alt="Image" class="" width="250" height="350">
+        <img src="{{asset ('images/my_img.jpg') }}" alt="Image" class="" width="250" height="350">
     </div>
 </section>
 
 <section>
     <h2> Links are here</h2>
     <section class="img-row">
-        <img src="./resources/beauty of nature.png" width="450" height="220">
-        <img src="./resources/world beauty.jpg" width="450" height="220">
+        <img src="{{asset ('images/beauty of nature.png') }}" width="450" height="220" alt="">
+        <img src="{{asset ('images/world beauty.jpg') }}" width="450" height="220" alt="">
     </section>
 </section>
 <a href="https://steemit.com/article/@mohammedfila/an-article-on-the-beauty-of-nature">
@@ -52,17 +52,17 @@
 </a>
 <br><br>
 <section class="img-row">
-    <img src="./resources/tourist.png" width="450" height="220">
-    <img src="./resources/bike tour.png" width="450" height="220">
-    <img src="./resources/beauty for tourist.png" width="450" height="220">
+    <img src="{{asset ('images/tourist.png') }}" width="450" height="220" alt="">
+    <img src="{{asset ('images/bike tour.png') }}" width="450" height="220" alt="">
+    <img src="{{asset ('images/beauty for tourist.png') }}" width="450" height="220" alt="">
 </section>
 <a href="https://nlplatform.com/articles/7-reasons-why-you-should-visit-netherlands">
     Charm of Netherlands."Click here"
 </a>
 
-<p>
-<h2>ICT field</h2>
 
+<h2>ICT field</h2>
+<p>
 I believe the field of Information and Communication Technology (ICT) suits me because of my deep
 passion for problem-solving and my fascination with how technology can transform lives. In ICT, the
 blend of creativity and logic is essential, and I find joy in both crafting innovative solutions and
@@ -92,8 +92,8 @@ information in various fields.
 </ol>
 <br><br>
 <footer class="contents">
-    <a target="_blank" href="mailto::khat0007@hz.nl"><img src="./resources/email.png" alt="Gmail icon" height="30" width="30"></a>
-    <a target="_blank" href="https://github.com/khat0007"> <img src="./resources/github.png" alt="Github icon" height="30" width="30"></a>
+    <a target="_blank" href="mailto::khat0007@hz.nl"><img src="{{asset ('images/email.png') }}" alt="Gmail icon" height="30" width="30"></a>
+    <a target="_blank" href="https://github.com/khat0007"> <img src="{{asset ('images/github.png') }}" alt="Github icon" height="30" width="30"></a>
 </footer>
 </body>
 </html>
