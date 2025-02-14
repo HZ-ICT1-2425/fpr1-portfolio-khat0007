@@ -43,6 +43,5 @@
         <li>Softhearted</li>
         <li>Creative</li>
         <li>Calm</li>
-
     </ul>
 @endsection

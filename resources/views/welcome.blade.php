@@ -58,7 +58,6 @@ information in various fields.
     and communication systems, aligns with my interest in collaborating across different domains to deliver
     innovative solutions. This makes me feel that ICT is not just a field I can excel in, but also one where
     I can continuously grow and contribute meaningfully.
-
 </p>
 <h1 class="title is-5 mt-5">After ICT oppertunities to go</h1>
 <ol>

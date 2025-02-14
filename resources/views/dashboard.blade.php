@@ -98,7 +98,6 @@
         <tr>
             <td>Portfolio</td>
         </tr>
-
         <tr>
             <td>Quarter 3&4</td>
             <td>Business IT Consultancy basics</td>

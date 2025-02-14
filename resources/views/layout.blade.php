@@ -24,7 +24,6 @@
     @yield('content')
 </main>
 
-<!-- Footer -->
 <footer class="contents">
     <a target="_blank" href="mailto:khat0007@hz.nl"><img src="{{ asset('images/email.png') }}" alt="Gmail icon" height="30" width="30"></a>
     <a target="_blank" href="https://github.com/khat0007"><img src="{{ asset('images/github.png') }}" alt="Github icon" height="30" width="30"></a>

@@ -56,7 +56,6 @@
             canceled. The space is then free to use by others.
         </div>
     </details>
-
     <details>
         <summary><b><u>Parking at HZ?</u></b></summary>
         <div>
