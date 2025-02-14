@@ -46,7 +46,6 @@
                 Netherlands. I was so happy because it is a great opportunity for me to fulfill my goals and dreams,
                 and I
                 am determined to make the most of it.
-
             </p>
         </div>
         <div>
