@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
 
-    <title>FAQ</title>
-
-    {{-- Compiled assets --}}
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
-</head>
-
-<body>
-<nav>
-    <ul class="navlist">
-        <li><a class="active" href="{{ route('faq') }}">Home</a></li>
-        <li><a href="{{ route('profile') }}">Profile</a></li>
-        <li><a href="{{ route('home') }}">FAQ</a></li>
-        <li><a href="{{ route('blogs') }}">Blogs</a></li>
-        <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-    </ul>
-</nav>
-
+@section('content')
+<title class="title is-2">FAQ</title>
 <div class="container">
-    <h1>Freaquent Ask Questions</h1>
+    <h1 class="title is-3">Freaquent Ask Questions</h1>
     <details>
         <summary><b><u>How can you print a document from your laptop at HZ?</u></b></summary>
         <div>
@@ -93,13 +74,4 @@
 
             <br><br><b>Walking to HZ location</b><br>
             If you park at the Poelendaelesingel you can reach the HZ via the pedestrian tunnel.
-        </div>
-    </details>
-</div>
-<footer class="contents">
-    <a target="_blank" href="mailto::khat0007@hz.nl"><img src="{{asset ('images/email.png') }}" alt="Gmail icon" height="30" width="30"></a>
-    <a target="_blank" href="https://github.com/khat0007"> <img src="{{asset ('/github.png') }}" alt="Github icon" height="30" width="30"></a>
-</footer>
-</body>
-
-</html>
+         @endsection

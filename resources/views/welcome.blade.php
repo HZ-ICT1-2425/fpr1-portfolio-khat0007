@@ -1,37 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
 
-    <title>Home</title>
+@section('content')
+    <h1 class="title is-1">Home</h1>
 
-    {{-- Compiled assets --}}
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
-</head>
-<body>
 <img src="{{ asset('images/HZ-logo-EN.jpg') }}" class="mylogo" alt="">
 
-<nav>
-    <ul class="navlist">
-        <li><a class="active" href="{{ route('home') }}">Home</a></li>
-        <li><a href="{{ route('profile') }}">Profile</a></li>
-        <li><a href="{{ route('faq') }}">FAQ</a></li>
-        <li><a href="{{ route('blogs') }}">Blogs</a></li>
-        <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-    </ul>
-</nav>
-
-<div>
-    <ul class="divlist">
-
-
-        <h1>Welcome To My Home Page</h1>
-    </ul>
-
-</div>
 <section>
-    <h2>Hi! I am Shaiza</h2>
+    <h2 class="title is-2">Hi!I am Shaiza</h2>
+          <h2 class="title is-3"> AND</h2>
+    <h2> Welcome To My Home Page</h2>
+
 </section>
 
 <section>
@@ -61,7 +39,7 @@
 </a>
 
 
-<h2>ICT field</h2>
+<h2 class="title is-5 mt-5">ICT field</h2>
 <p>
 I believe the field of Information and Communication Technology (ICT) suits me because of my deep
 passion for problem-solving and my fascination with how technology can transform lives. In ICT, the
@@ -82,7 +60,7 @@ information in various fields.
     I can continuously grow and contribute meaningfully.
 
 </p>
-<h1>After ICT oppertunities to go</h1>
+<h1 class="title is-5 mt-5">After ICT oppertunities to go</h1>
 <ol>
     <li>Programer</li>
     <li>IT Manager</li>
@@ -90,10 +68,4 @@ information in various fields.
     <li>Web Developer</li>
     <li>Computer service technician</li>
 </ol>
-<br><br>
-<footer class="contents">
-    <a target="_blank" href="mailto::khat0007@hz.nl"><img src="{{asset ('images/email.png') }}" alt="Gmail icon" height="30" width="30"></a>
-    <a target="_blank" href="https://github.com/khat0007"> <img src="{{asset ('images/github.png') }}" alt="Github icon" height="30" width="30"></a>
-</footer>
-</body>
-</html>
+@endsection

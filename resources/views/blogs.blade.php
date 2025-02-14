@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
 
-    <title>Blogs</title>
+@section('content')
+    <title class="title is-1">Blogs</title>
 
-    {{-- Compiled assets --}}
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
-</head>
-
-
-<body>
-<style>
-
-</style>
-<nav>
-    <ul class="navlist">
-
-        <li><a class="active" href="{{ route('blogs') }}">Home</a></li>
-        <li><a href="{{ route('profile') }}">Profile</a></li>
-        <li><a href="{{ route('faq') }}">FAQ</a></li>
-        <li><a href="{{ route('home') }}">Blogs</a></li>
-        <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-    </ul>
-</nav>
 <div class="container">
-    <h1>Study Choice</h1>
+    <h1 class="title is-2">Study Choice</h1>
     <img src="{{asset ('images/study-choice.jpg') }}" width="320" height="220" alt="">
 
     <p>
@@ -34,12 +12,12 @@
     <p>>read more...</p>
 
 <br>
-    <h1>Personal SWOT</h1>
+    <h1 class="title is-5 mt-5">Personal SWOT</h1>
     <img src="{{asset ('images/swot.png') }}" width="320" height="200" left="0" right="100" alt="">
     <section id="swot">
         <div>
             <img src="{{asset ('images/strength.jpg') }}" width="250" height="150" alt="">
-            <h2>Strength</h2>
+            <h2 class="title is-5 mt-5">Strength</h2>
             <p> One of my key strength is to maintain full focus on my goals and tasks.Once I commit something so I
                 give it
                 my full attention and complete it on time.I am creative mindset also which allows me to think
@@ -50,7 +28,7 @@
         </div>
         <div>
             <img src="{{asset ('images/weaknesses.webp') }}" width="250" height="150"  alt="">
-            <h2>Weaknesses</h2>
+            <h2 class="title is-5 mt-5">Weaknesses</h2>
             <p>
                 My weaknesses is I was afraid of what people talk about me or what they think about me,which
                 sometime
@@ -60,7 +38,7 @@
         </div>
         <div>
             <img src="{{asset ('images/oppertuinty-img.jpg') }}" width="250" height="150"  alt="">
-            <h2>Oppertunity</h2>
+            <h2 class="title is-5 mt-5">Oppertunity</h2>
             <p>
                 My childhood dream was to become an IT expert, but my background was not related to it. However, I
                 was
@@ -73,7 +51,7 @@
         </div>
         <div>
             <img src="{{asset ('images/threats.html.jpg') }}" width="250" height="150"  alt="">
-            <h2>Threats</h2>
+            <h2 class="title is-5 mt-5">Threats</h2>
             <p>
                 In my previous study, my friend gave me a survey with the demand to complete it within just four
                 days,
@@ -87,7 +65,7 @@
     </section>
     <section>
         <div>
-            <h1>My programing experience</h1>
+            <h1 class="title is-5 mt-5">My programing experience</h1>
             <br>
             <img src="{{asset ('images/my-programing-exp.jpg') }}" width="400" height="220"  alt="">
             <p3>I have some programming experience, primarily in C++, which I gained through online courses and
@@ -97,7 +75,7 @@
     </section>
     <br>
     <section>
-        <h1>The Field of ICT</h1>
+        <h1 class="title is-5 mt-5">The Field of ICT</h1>
         <img src="{{asset ('images/field-of-ICT.jpg') }}" width="400" height="220"  alt="">
     </section>
     <section>
@@ -105,11 +83,4 @@
             designed to equip students with cutting-edge technical knowledge</artical>
         <p><a href="study.html">read more...</a></p>
     </section>
-</div>
-<footer class="contents">
-    <a target="_blank" href="mailto::khat0007@hz.nl"><img src="{{asset ('images/email.png') }}" alt="Gmail icon" height="30" width="30"></a>
-    <a target="_blank" href="https://github.com/khat0007"> <img src="{{asset ('images/github.png') }}" alt="Github icon" height="30" width="30"></a>
-</footer>
-</body>
-
-</html>
+    @endsection
