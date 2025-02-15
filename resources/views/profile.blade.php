@@ -1,4 +1,4 @@
-    <x-layout.layou>
+    <x-layout.layout>
         <div>
     <h2 class="title is-4">My Profile Page</h2>
     <section>
@@ -47,5 +47,5 @@
 
     </ul>
         </div>
-    </x-layout.layou>
+    </x-layout.layout>
 
