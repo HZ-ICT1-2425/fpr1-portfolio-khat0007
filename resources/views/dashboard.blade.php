@@ -1,7 +1,4 @@
-@extends('layout')
-
-@section('content')
-
+    <x-layout.layout>
     <title class="title is-1">Dashboard</title>
     <h2 class="title is-2">Study And Progress Table</h2>
     <h2 class="title is-3">Dashboard</h2>
@@ -10,8 +7,8 @@
 
         <tr>
             <th></th>
-            <th> Course </th>
-            <th> Assessment </th>
+            <th> Course</th>
+            <th> Assessment</th>
             <th> Credits you can earn<br>(EC)</th>
             <th> Grade</th>
         </tr>
@@ -25,7 +22,7 @@
 
         <tr>
             <td>IT Personality 2</td>
-            <td>Portfolio </td>
+            <td>Portfolio</td>
             <td>2.5</td>
             <td>-</td>
         </tr>
@@ -45,7 +42,7 @@
         </tr>
         <tr>
             <td> Computer Science Basics</td>
-            <td>Written exam </td>
+            <td>Written exam</td>
             <td>5</td>
             <td class="passed"></td>
         </tr>
@@ -88,7 +85,7 @@
         <tr>
             <td rowspan="3">Quarter 4</td>
             <td rowspan="3">Framework Project 2</td>
-            <td>Portfolio </td>
+            <td>Portfolio</td>
             <td rowspan="3">10</td>
             <td rowspan="3" class="failed">-</td>
         </tr>
@@ -98,6 +95,7 @@
         <tr>
             <td>Portfolio</td>
         </tr>
+
         <tr>
             <td>Quarter 3&4</td>
             <td>Business IT Consultancy basics</td>
@@ -117,4 +115,5 @@
         </div>
         <text id="ind">0/60 EC</text>
     </section>
-    @endsection
+    </x-layout.layout>
+

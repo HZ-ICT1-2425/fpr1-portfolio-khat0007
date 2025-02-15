@@ -21,7 +21,9 @@
 </header>
 
 <main>
-    @yield('content')
+
+    {{$slot}}
+{{--    @yield('content')--}}
 </main>
 
 <footer class="contents">
