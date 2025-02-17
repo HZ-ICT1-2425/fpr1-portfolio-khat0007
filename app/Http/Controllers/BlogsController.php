@@ -3,43 +3,46 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class BlogsController extends Controller
 {
-
-    private $blogs = [
-        [
-            'title' => 'Study Choice',
-            'slug' => 'study-choice',
-            'content' => 'The increasing role of technology...',
-            'image' => 'images/study-choice.jpg'
-        ],
-        [
-            'title' => 'My Programming Experience',
-            'slug' => 'programming-experience',
-            'content' => 'I have some programming experience, primarily in C++...',
-            'image' => 'images/my-programing-exp.jpg'
-        ],
-        [
-            'title' => 'The Field of ICT',
-            'slug' => 'field-of-ict',
-            'content' => 'The Information and Communication Technology (ICT) field...',
-            'image' => 'images/field-of-ICT.jpg'
-        ]
-    ];
     public function index()
     {
-        return view('blogs', ['blogs' => $this->blogs]);
+        return view('blogs.posts.index');
     }
-    public function show($slug)
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory
+     * |\Illuminate\Contracts\View\View|
+     * \Illuminate\Foundation\Application
+     */
+    public function ictField()
     {
+        return view('blogs.posts.ict-field');
+    }
 
-        $blog = collect($this->blogs)->firstWhere('slug', $slug);
+    /**
+     * @return \Illuminate\Contracts\View\Factory|
+     * \Illuminate\Contracts\View\View|
+     * \Illuminate\Foundation\Application
+     */
+    public function personalSwot()
+    {
+        return view('blogs.posts.personal-swot');
+    }
 
-        if (!$blog) {
-            abort(404);
-        }
+    public function studyChoice()
+    {
+        return view('blogs.posts.study-choice');
+    }
+    public function feedback()
+    {
+        return view('blogs.posts.feedback');
+    }
 
-        return view('blog-details', ['blog' => $blog]);
+    public function experience()
+    {
+        return view('blogs.posts.experience');
     }
 }
