@@ -246,13 +246,13 @@ img {
 }
 .img-deg {
     float: right;
-    width: 30;
+    width: 30px;
     padding-left: 40px;
     padding-right: 20px;
 }
 .pos-cen {
-    width: 70;
-    left: 15;
+    width: 70px;
+    left: 15px;
     top: 20%
 }
 .navlist {
@@ -295,7 +295,7 @@ img {
     background-color: rgb(20, 129, 92);
 }
 .content-color {
-    color: rgb(black);
+    color: black;
 }
 ul {
     color: black
@@ -326,11 +326,11 @@ footer a {
 /* pic&post aline */
 .img-deg {
     float: right;
-    width: 30;
+    width: 30px;
 }
 .pos-cen {
-    width: 40;
-    left: 15;
+    width: 40px;
+    left: 15px;
     top: 20%
 }
 

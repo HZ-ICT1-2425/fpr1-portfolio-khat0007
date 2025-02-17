@@ -2,7 +2,7 @@
     <div>
         <h1 class="title is-1">Home</h1>
 
-        <img src="{{ asset('images/HZ-logo-EN.jpg') }}" class="mylogo" alt="">
+        <img src="{{ asset('images/HZ-logo-EN.jpg') }}" class="mylogo" alt="HZ Logo">
 
         <section>
             <h2 class="title is-2">Hi!I am Shaiza</h2>

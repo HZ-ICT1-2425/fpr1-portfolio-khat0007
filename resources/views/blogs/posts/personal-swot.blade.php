@@ -60,7 +60,7 @@
             </div>
         </section>
     </div>
-        <a href="{{ route('blog') }}">
+        <a href="{{ route('blogs') }}">
             <button id="back-button-swot" type="button">BACK</button>
         </a>
 </x-layout.layout>

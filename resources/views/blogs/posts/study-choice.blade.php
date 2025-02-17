@@ -29,7 +29,7 @@
             This will also open up many job opportunities and allow me to continue growing professionally. Overall, I am
             excited to start this new chapter and build a successful future.
         </p>
-        <a href="{{ route('blog') }}">
+        <a href="{{ route('blogs') }}">
             <button id="back-button-st-choice" type="button">BACK</button>
         </a>
     </div>

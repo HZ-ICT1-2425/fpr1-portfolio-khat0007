@@ -1,6 +1,5 @@
 <x-layout.layout>
     <div class="container">
-        <form action="{{ route('blogs.posts.update', $post) }}" method="POST">
         <h1 class="title is-3">My First FeedBack</h1>
         <h4>
             This feedback is from Hugo Massar (ICT lecturer) for my "Who am I?" assignment
@@ -21,7 +20,7 @@
 
 
 
-    <a href="{{ route('blog') }}">
+    <a href="{{ route('blogs') }}">
         <button id="back-button-swot" type="button">BACK</button>
     </a>
         </form>

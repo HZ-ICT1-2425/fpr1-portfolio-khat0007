@@ -20,7 +20,7 @@
             University empowers students to become the tech innovators of the future.
         </artical>
     </div>
-    <a href="{{ route('blog') }}">
+    <a href="{{ route('blogs') }}">
         <button id="back-button" type="button">BACK</button>
     </a>
 </x-layout.layout>

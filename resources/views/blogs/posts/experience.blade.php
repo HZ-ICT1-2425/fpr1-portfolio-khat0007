@@ -1,6 +1,5 @@
 <x-layout.layout>
     <div class="container">
-        <form action="{{ route('blogs.store') }}" method="POST">
         <h1 class="title is-8">My programing experience</h1>
         <img src="{{asset ('images/my-programing-exp.jpg') }}" width="400" height="220" alt="">
         <p3>I have some programming experience, primarily in C++, which I gained through online courses and self-study
@@ -24,7 +23,7 @@
         </p3>
         </form>
     </div>
-        <a href="{{ route('blog') }}">
+        <a href="{{ route('blogs') }}">
             <button id="back-button-swot" type="button">BACK</button>
         </a>
 </x-layout.layout>
