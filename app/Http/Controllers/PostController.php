@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
-class BlogsController extends Controller
+class PostController extends Controller
 {
     public function index()
     {
-        return view('blogs.posts.index');
+        return view('blogs.posts.index', [
+            'posts' => Post::all()
+        ]);
     }
 
     /**

@@ -2,6 +2,11 @@
     <div class="container">
         <h1 class="title is-3">Personal SWOT</h1>
         <img src="{{asset ('images/swot.png') }}" width="320" height="200" left="0" right="100" alt="">
+        <p3>
+            A Personal SWOT analysis helps you understand your Strengths, Weaknesses, Opportunities, and Threats.
+            It allows you to identify what you're good at, where you need improvement, potential chances for growth,
+            and challenges you might face. This can help you make better decisions for your personal and professional life.
+        </p3>
         <section id="swot">
             <div>
                 <img src="{{asset ('images/strength.jpg') }}" width="250" height="150" alt="">
