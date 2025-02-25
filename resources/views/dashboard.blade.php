@@ -116,4 +116,3 @@
         <text id="ind">0/60 EC</text>
     </section>
     </x-layout.layout>
-

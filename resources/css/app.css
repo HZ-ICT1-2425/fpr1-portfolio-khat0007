@@ -76,7 +76,7 @@ td {
 }
 #barfill {
     height: 20px;
-    width: 0%;
+    width: 0;
     background-color: rgba(247, 32, 39, 0.807);
     border-radius: 7px;
     margin-bottom: 100px;
@@ -152,7 +152,7 @@ body {
     position: absolute;
     height: auto;
     top: 0;
-    left: 0px;
+    left: 0;
     width: 160px;
     z-index: 1;
     padding: 20px 10px;
@@ -187,7 +187,6 @@ body {
     display: flex;
     gap: 5em;
     justify-content: center;
-    background-color: none;
     padding: 10px 20px;
     position: absolute;
     top: 5.5%;
@@ -195,7 +194,7 @@ body {
 }
 /* Fix h2 image margin issue */
 h2 img {
-    margin-top: 0%;
+    margin-top: 0;
 }
 .container {
     flex-grow: 1; /* This makes the container take up available space */
@@ -203,7 +202,8 @@ h2 img {
     flex-direction: column;
     justify-content: space-between;
     background-color: lightgray;
-    padding-bottom: 4%;
+    padding: 0 30px;
+    margin: 0 15px 50px 15px;
 }
 /* Move images in absolute position */
 .move-image1 {
@@ -345,12 +345,11 @@ details {
 }
 .navlist {
     list-style: none;
-    display: fixed;
     gap: 5%;
     justify-content: center;
     background-color: gray;
     position:absolute;
-    top: 0%;
+    top: 0;
     height: 40px;
     width: 100%;
     z-index: 0;
@@ -441,3 +440,142 @@ details {
 ol {
     color: black;
 }
+
+.post-link {
+    color: #2d3748;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.post-page-button {
+    text-align: right;
+    }
+
+.input{
+    width: 500px !important;
+}
+.button {
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.button.is-primary {
+    background-color: #3273dc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button.is-primary:hover {
+    background-color: #2755a3;
+}
+.button.is-light {
+    background-color: #f5f5f5;
+    color: #363636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.button.is-light:hover {
+    background-color: #e0e0e0;
+}
+.button.is-warning {
+    background-color:blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button.is-warning:hover {
+    background-color: darkred;
+}
+
+.container-show {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 40px; /* Space between image and text */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Image on the left */
+.container-show img {
+    max-width: 40%; /* Adjust size as needed */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Text and buttons on the right */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+}
+
+/* Buttons alignment */
+.edit-page-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+.edit-button,
+.create-button,
+.delete-button,
+#back-button-swot {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.delete-button {
+    width: 150px;
+    height: 40px;
+}
+
+.edit-button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.delete-button, .create-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#back-button-swot {
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+}
+
+.container h1 {
+    text-align: center;
+}
+

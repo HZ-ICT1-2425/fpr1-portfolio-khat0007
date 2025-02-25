@@ -2,49 +2,92 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\View\View;
 
 class PostController extends Controller
 {
-    public function index()
+    /**
+     * @return View - the posts.index.blade.php
+     */
+    public function index(): View
     {
-        return view('blogs.posts.index', [
-            'posts' => Post::all()
+        return view('posts.index', [
+        'posts' => Post::all()
+
         ]);
     }
 
     /**
-     * @return \Illuminate\Contracts\View\Factory
-     * |\Illuminate\Contracts\View\View|
-     * \Illuminate\Foundation\Application
+     * @param $slug
+     * @return View - the posts.show.blade.php
      */
-    public function ictField()
+    public function show($slug): View
     {
-        return view('blogs.posts.ict-field');
+        $post = Post::where('slug', $slug)->firstOrFail();
+        return view('posts.show', ['post' => $post]);
     }
 
     /**
-     * @return \Illuminate\Contracts\View\Factory|
-     * \Illuminate\Contracts\View\View|
-     * \Illuminate\Foundation\Application
+     * @return View - the posts.create.blade.php
      */
-    public function personalSwot()
+    public function create(): View
     {
-        return view('blogs.posts.personal-swot');
+        return view('posts.create');
     }
 
-    public function studyChoice()
+    /**
+     * @param Request $request
+     * @return RedirectResponse
+     */
+    public function store(Request $request): RedirectResponse
     {
-        return view('blogs.posts.study-choice');
-    }
-    public function feedback()
-    {
-        return view('blogs.posts.feedback');
+        $validated = $request->validate([
+            'title' => 'required',
+            'slug' => 'required',
+            'body' => 'required',
+        ]);
+
+        $post = Post::create($validated);
+        return redirect()->route('posts.index');
     }
 
-    public function experience()
+    /**
+     * @param Post $post
+     * @return View - the posts.edit.blade.php
+     */
+    public function edit(Post $post): View
     {
-        return view('blogs.posts.experience');
+        return view('posts.edit', ['post' => $post]);
+    }
+
+    /**
+     * @param Request $request
+     * @param Post $post
+     * @return RedirectResponse
+     */
+    public function update(Request $request, Post $post): RedirectResponse
+    {
+        $validated = $request->validate([
+            'title' => 'required',
+            'slug' => 'required',
+            'body' => 'required',
+        ]);
+
+        $post->update($validated);
+        return redirect()->route('posts.show', ['slug' => $post->slug]);
+    }
+
+    /**
+     * @param Post $post
+     * @return RedirectResponse
+     */
+    public function destroy(Post $post): RedirectResponse
+    {
+        $post->delete();
+        return redirect()->route('posts.index');
     }
 }

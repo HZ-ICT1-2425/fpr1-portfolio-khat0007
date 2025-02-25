@@ -10,21 +10,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/faq', [FAQController::class, 'index'])->name('faq');
-Route::get('/blogs', [PostController::class, 'index'])->name('blogs');
-Route::get('/blogs/posts/experience', [PostController::class, 'experience'])->name('blogs.posts.experience');
-Route::get('/blogs/posts/feedback', [PostController::class, 'feedback'])->name('blogs.posts.feedback');
-Route::get('/blogs/posts/ict-field', [PostController::class, 'ictfield'])->name('blogs.posts.ict-field');
-Route::get('/blogs/posts/index', [PostController::class, 'index'])->name('blogs.posts.index');
-Route::get('/blogs/posts/personal-swot', [PostController::class, 'personalswot'])->name('blogs.posts.personal-swot');
-Route::get('/blogs/posts/study-choice', [PostController::class, 'studychoice'])->name('blogs.posts.study-choice');
-// Create a blog post
-Route::get('/blogs/posts/create', [PostController::class, 'index'])->name('blogs.posts.create');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::post('/blogs/posts/store', [PostController::class, 'store'])->name('blogs.posts.store');
-// Read a single blog post
-Route::get('/blogs/posts/{id}', [PostController::class, 'show'])->name('blogs.posts.show');
-// Edit a blog post
-Route::get('/blogs/posts/{id}/edit', [PostController::class, 'edit'])->name('blogs.posts.edit');
-Route::put('/blogs/posts/{id}', [PostController::class, 'update'])->name('blogs.posts.update');
-// Delete a blog post
-Route::delete('/blogs/posts/{id}', [PostController::class, 'destroy'])->name('blogs.posts.destroy');
+Route::get('/blog', [PostController::class, 'index'])->name('posts.index');
+Route::get('/blog/create', [PostController::class, 'create'])->name('posts.create');
+Route::get('/blog/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
+Route::delete('/blog/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
+Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
+Route::get('blog/{slug}', [PostController::class, 'show'])->name('posts.show');
+Route::post('/blog', [PostController::class, 'store'])->name('posts.store');

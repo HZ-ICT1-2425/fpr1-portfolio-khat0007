@@ -14,7 +14,7 @@
             <li><a class="active" href="{{ route('home') }}">Home</a></li>
             <li><a href="{{ route('profile') }}">Profile</a></li>
             <li><a href="{{ route('faq') }}">FAQ</a></li>
-            <li><a href="{{ route('blogs') }}">Blogs</a></li>
+            <li><a href="{{ route('posts.index') }}">Blogs</a></li>
             <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
         </ul>
     </nav>
