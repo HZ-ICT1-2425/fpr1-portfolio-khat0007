@@ -1,0 +1,712 @@
+body,
+html {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    padding-top: 60px !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+profile.html {
+    display: grid;
+    background-color: rgba(1, 6, 11, 0);
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.active {
+    background-color: white;
+    color: blueviolet
+}
+
+
+/* Dashboard */
+/* Table */
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+    align-items: center;
+}
+table {
+    border: solid 5px black;
+}
+.center tr {
+    border: 5px solid black;
+}
+th:nth-child(even),
+td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+    text-align: center;
+    align-items: center;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+td {
+    text-align: center;
+    padding: 10px;
+}
+/* Passed / failed */
+.passed {
+    background-color: #92ec5b84;
+}
+.failed-retake {
+    background-color: rgba(224, 59, 59, 0.455);
+}
+.failed {
+    background-color: rgba(247, 32, 32, 0.807);
+}
+#file {
+    width: 100%;
+    background-color: white;
+}
+/* Progress bar */
+#ec_tot {
+    margin-left: 57%;
+}
+#bar {
+    height: 20px;
+    width: 70%;
+    margin-left: 15%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: solid 3px;
+    position: relative;
+}
+#barfill {
+    height: 20px;
+    width: 0;
+    background-color: rgba(247, 32, 39, 0.807);
+    border-radius: 7px;
+    margin-bottom: 100px;
+}
+#nbsa, #nbsa_mark {
+    height: 20px;
+    width: 3px;
+    margin-left: 75%;
+    background-color: rgb(12, 13, 12);
+    margin-bottom: auto;
+    position: absolute;
+    top: 0;
+}
+#prg_lbl {
+    margin-left: 5%;
+}
+#nbsa_mark {
+    margin-top: 20px;
+    background: none;
+}
+#ind {
+    margin-left: 80%;
+}
+.marker-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.marker-list .marker {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgb(224, 198, 198);
+}
+
+
+/*Home*/
+/* Center elements like block-level containers */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Home page container */
+.home-page {
+    min-height: 100vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(221, 221, 220); /* Background for the home page */
+    padding: 20px;
+}
+/* Center headings */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+p {
+    color: rgb(13, 14, 13);
+}
+/* Body background */
+body {
+    background-color: rgb(221, 221, 220); /* Background for the entire body */
+    padding: 15px;
+}
+/* Logo positioning */
+.mylogo {
+    position: absolute;
+    height: auto;
+    top: 0;
+    left: 0;
+    width: 160px;
+    z-index: 1;
+    padding: 20px 10px;
+}
+/* Navigation list */
+.navlist {
+    list-style: none;
+    display: flex;
+    gap: 4.5em;
+    justify-content: center;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 0;
+}
+/* Nav links */
+.navlist a {
+    color: white;
+    text-decoration: none;
+}
+.navlist a:hover {
+    background-color: rgb(89, 92, 91);
+}
+.navlist .active {
+    background-color: rgb(20, 129, 92);
+}
+/* Divlist class for other content */
+.divlist {
+    list-style: none;
+    display: flex;
+    gap: 5em;
+    justify-content: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 5.5%;
+    width: 96%;
+}
+/* Fix h2 image margin issue */
+h2 img {
+    margin-top: 0;
+    text-align: justify;
+    margin-left: auto;
+}
+.container {
+    flex-grow: 1; /* This makes the container take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 0 30px;
+    margin: 0 15px 50px 15px;
+}
+/* Move images in absolute position */
+.move-image1 {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 200px;
+}
+.move-image2 {
+    position: absolute;
+    top: 430px;
+    left: 30px;
+    width: 200px;
+}
+.move-image3 {
+    position: absolute;
+    top: 630px;
+    left: 30px;
+    width: 200px;
+}
+
+
+/*profile*/
+.profile {
+    min-height: 100vh;
+    width: 100%;
+}
+.para {
+    text-align: justify;
+}
+img {
+    display: block;
+}
+.img-row {
+    display: flex;
+    gap: 3em;
+}
+#titleProf {
+    text-align: center;
+}
+.img-deg {
+    float: right;
+    width: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.pos-cen {
+    width: 70px;
+    left: 15px;
+    top: 20%
+}
+.navlist {
+    list-style-type: none;
+    display: flex;
+    gap: 4.5em;
+    justify-content: center;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.profile {
+    margin: 20px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+#about-me {
+    display: flex;
+    gap: 5em;
+}
+#text div {
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 1em;
+}
+.about-me {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.navlist a {
+    color: white;
+    text-decoration: none;
+}
+.navlist a:hover {
+    background-color: rgb(89, 92, 91);
+}
+.navlist .active {
+    background-color: rgb(20, 129, 92);
+}
+.content-color {
+    color: black;
+}
+ul {
+    color: black
+}
+footer {
+    height: 50px;
+}
+.contents  {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    background-color: rgb(89, 92, 91);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.contents a{
+    width: min-content;
+}
+footer a {
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 8px;
+    color: white;
+    bottom: 0;
+    height: 30px;
+}
+/* pic&post aline */
+.img-deg {
+    float: right;
+    width: 30px;
+}
+.pos-cen {
+    width: 40px;
+    left: 15px;
+    top: 20%
+}
+
+
+/*faq*/
+details {
+    cursor: pointer;
+}
+.profile {
+    min-height: 100vh;
+    width: 100%;
+}
+.navlist {
+    list-style: none;
+    gap: 5%;
+    justify-content: center;
+    background-color: gray;
+    position:absolute;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 0;
+}
+.navlist a {
+    color: white;
+    text-decoration: none;
+}
+.navlist a:hover {
+    background-color: rgb(89, 92, 91);
+}
+.navlist .active {
+    background-color: rgb(20, 129, 92);
+}
+
+
+
+/*blogs*/
+.profile {
+    min-height: 100vh;
+    width: 100%;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.navlist {
+    list-style: none;
+    display: flex;
+    gap: 4.5em;
+    justify-content: center;
+    background-color: gray;
+    padding-top:10px;
+    position: absolute;
+}
+.navlist a {
+    color: white;
+    padding:10px;
+    text-decoration: none;
+    margin-top:20px;
+}
+.navlist a:hover {
+    background-color: rgb(89, 92, 91);
+}
+.navlist .active {
+    background-color: rgb(20, 129, 92);
+}
+/* /*blogs box */
+.Personal .SWOT {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#swot {
+    display: flex;
+    gap: 1em;
+}
+#swot div {
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 1em;
+}
+.posts {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.strength {
+    width: 100px;
+    height: 100px;
+    background-color: violet;
+}
+.oppertunities {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.weaknesses {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+}
+.threats {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+}
+ol {
+    color: black;
+}
+
+.post-link {
+    color: #2d3748;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.post-page-button {
+    text-align: right;
+    }
+
+.input{
+    width: 500px !important;
+}
+.button {
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.button.is-primary {
+    background-color: #3273dc;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button.is-primary:hover {
+    background-color: #2755a3;
+}
+.button.is-light {
+    background-color: #f5f5f5;
+    color: #363636;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.button.is-light:hover {
+    background-color: #e0e0e0;
+}
+.button.is-warning {
+    background-color:blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    text-align: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.button.is-warning:hover {
+    background-color: darkred;
+}
+
+.container-show {
+    display: flex;
+    align-items: center; /* Vertically align content */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 40px; /* Space between image and text */
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Image on the left */
+.container-show img {
+    max-width: 40%; /* Adjust size as needed */
+    height: auto;
+    object-fit: cover;
+}
+
+/* Text and buttons on the right */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+}
+
+/* Buttons alignment */
+.edit-page-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Button styles */
+.edit-button,
+.create-button,
+.delete-button,
+#back-button-swot {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    width: 120px;
+}
+
+.delete-button {
+    width: 150px;
+    height: 40px;
+}
+
+.edit-button {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.delete-button, .create-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#back-button-swot {
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+/*php faq page style*/
+/* Centering the main FAQ container */
+.faq-main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+#questions-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.faq-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.faq-item summary {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#create-post-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+#create-post-button:hover {
+    background-color: #0056b3;
+}
+details {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+/* Container for the FAQ form and image */
+.faq-container {
+    display: flex;
+    align-items: center; /* Center everything vertically */
+    justify-content: center; /* Center contents horizontally */
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image on the left */
+.faq-image {
+    flex: 1; /* Takes 50% width */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    padding-right: 20px;
+}
+
+.faq-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* FAQ form on the right */
+.faq-form {
+    flex: 1; /* Takes 50% width */
+    text-align: left;
+    max-width: 400px;
+}
+/* Style input fields */
+.faq-form input[type="text"],
+.faq-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* Style the buttons */
+.faq-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.faq-form button:hover {
+    background: #0056b3;
+}
+/* Make the cancel link look better */
+.faq-form a {
+    display: inline-block;
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+}
+.faq-form a:hover {
+    text-decoration: underline;
+}
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .faq-image {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .faq-form {
+        max-width: 100%;
+    }
+}
