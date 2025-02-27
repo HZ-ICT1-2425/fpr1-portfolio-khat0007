@@ -21,7 +21,6 @@
             <h2> Links are here</h2>
             <section class="img-row">
                 <img src="{{asset ('images/beauty of nature.png') }}" width="450" height="220" alt="">
-                <img src="{{asset ('images/world beauty.jpg') }}" width="450" height="220" alt="">
             </section>
         </section>
         <a href="https://steemit.com/article/@mohammedfila/an-article-on-the-beauty-of-nature">
@@ -30,8 +29,6 @@
         <br><br>
         <section class="img-row">
             <img src="{{asset ('images/tourist.png') }}" width="450" height="220" alt="">
-            <img src="{{asset ('images/bike tour.png') }}" width="450" height="220" alt="">
-            <img src="{{asset ('images/beauty for tourist.png') }}" width="450" height="220" alt="">
         </section>
         <a href="https://nlplatform.com/articles/7-reasons-why-you-should-visit-netherlands">
             Charm of Netherlands."Click here"

@@ -195,6 +195,8 @@ body {
 /* Fix h2 image margin issue */
 h2 img {
     margin-top: 0;
+    text-align: justify;
+    margin-left: auto;
 }
 .container {
     flex-grow: 1; /* This makes the container take up available space */
@@ -579,3 +581,132 @@ ol {
     text-align: center;
 }
 
+/*php faq page style*/
+/* Centering the main FAQ container */
+.faq-main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+#questions-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.faq-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.faq-item summary {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#create-post-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+#create-post-button:hover {
+    background-color: #0056b3;
+}
+details {
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+/* Container for the FAQ form and image */
+.faq-container {
+    display: flex;
+    align-items: center; /* Center everything vertically */
+    justify-content: center; /* Center contents horizontally */
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image on the left */
+.faq-image {
+    flex: 1; /* Takes 50% width */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    padding-right: 20px;
+}
+
+.faq-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* FAQ form on the right */
+.faq-form {
+    flex: 1; /* Takes 50% width */
+    text-align: left;
+    max-width: 400px;
+}
+/* Style input fields */
+.faq-form input[type="text"],
+.faq-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* Style the buttons */
+.faq-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.faq-form button:hover {
+    background: #0056b3;
+}
+/* Make the cancel link look better */
+.faq-form a {
+    display: inline-block;
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+}
+.faq-form a:hover {
+    text-decoration: underline;
+}
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .faq-image {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .faq-form {
+        max-width: 100%;
+    }
+}
